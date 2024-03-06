@@ -1,1 +1,28 @@
 đối tượng Date để lưu giá trị ngày tháng
+
+Mặc định Java xem các kiểu số nguyên là int và kiểu số có phần thập phân là double
+
+- kiểu float chia lấy phần nguyên cho một số thì kết quả lấy cả phần dư + phần nguyên
+	float a = 4.0; int b = 3;
+   float c = (float) a / b = 1.3333333
+
+- khi tạo biến có phần thập phân thì mặc định là kiểu double
+- tạo biến float: 
+		float a = 9.8f			ép kiểu từ double sang float
+		float a = (float )9.8		ép kiểu từ double sang float
+- khi thực hiện bất kỳ phép tính toán, thì các kiểu dữ liệu sẽ chuyển đổi thành kiểu dữ liệu mặc định
+
+- phương thức nhà máy là phương thức tạo ra đối tượng thay thế cho constructer
+	+ phải có từ khoá static
+	+ trả về kiểu đối tượng 
+	+ tên phương thức :	getInstance();
+	+ public static Sharp getInstance() {
+		return new Sharp(); }
+
+
+- một lớp chỉ kế thừa(extend) một lớp khác. một lớp có thể cài đặt(implements) nhiều interface;
+- một interface không thể kế thừa từ một lớp vì không có phần triển khai (tạo )đối tượng
+- một interface có thể kế thừa từ nhiều interface khác
+- một interface không thể cài đặt từ interface khác vì không có phần tạo đối tượng
+	==> { yêu cầu implemets interface thì phải triển  khai được
+		lớp asbtract, interface thì không thể triển khai được nên phải dựa vào lớp con
